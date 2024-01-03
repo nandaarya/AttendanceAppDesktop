@@ -48,6 +48,7 @@
             this.Controls.Add(this.metroLabel1);
             this.Name = "ParticipantWindow";
             this.Text = "ParticipantWindow";
+            this.Load += new System.EventHandler(this.ParticipantWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

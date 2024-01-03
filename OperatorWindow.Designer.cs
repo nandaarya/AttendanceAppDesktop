@@ -48,7 +48,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.metroLabel1);
             this.Name = "OperatorWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OperatorWindow";
+            this.Load += new System.EventHandler(this.OperatorWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,12 +12,22 @@ namespace AttendanceAppDesktop
 {
     public partial class OperatorWindow : Form
     {
+        string id = LoginForm.Session.loggedInId;
+        string email = LoginForm.Session.loggedInEmail;
+        string name = LoginForm.Session.loggedInName;
+        string role = LoginForm.Session.loggedInRole;
+
         public OperatorWindow()
         {
             InitializeComponent();
         }
 
         private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OperatorWindow_Load(object sender, EventArgs e)
         {
 
         }
