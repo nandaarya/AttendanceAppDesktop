@@ -35,6 +35,7 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroButtonLogin = new MetroFramework.Controls.MetroButton();
+            this.metroCheckBoxPassword = new MetroFramework.Controls.MetroCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             // 
             // metroTextBoxPassword
             // 
-            this.metroTextBoxPassword.Location = new System.Drawing.Point(48, 333);
+            this.metroTextBoxPassword.Location = new System.Drawing.Point(48, 327);
             this.metroTextBoxPassword.Name = "metroTextBoxPassword";
             this.metroTextBoxPassword.PasswordChar = '*';
             this.metroTextBoxPassword.Size = new System.Drawing.Size(355, 22);
@@ -76,7 +77,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(48, 310);
+            this.metroLabel2.Location = new System.Drawing.Point(48, 304);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(66, 20);
             this.metroLabel2.TabIndex = 4;
@@ -84,12 +85,23 @@
             // 
             // metroButtonLogin
             // 
-            this.metroButtonLogin.Location = new System.Drawing.Point(48, 406);
+            this.metroButtonLogin.Location = new System.Drawing.Point(48, 417);
             this.metroButtonLogin.Name = "metroButtonLogin";
             this.metroButtonLogin.Size = new System.Drawing.Size(355, 23);
             this.metroButtonLogin.TabIndex = 5;
             this.metroButtonLogin.Text = "Login";
             this.metroButtonLogin.Click += new System.EventHandler(this.metroButtonLogin_Click);
+            // 
+            // metroCheckBoxPassword
+            // 
+            this.metroCheckBoxPassword.AutoSize = true;
+            this.metroCheckBoxPassword.Location = new System.Drawing.Point(48, 356);
+            this.metroCheckBoxPassword.Name = "metroCheckBoxPassword";
+            this.metroCheckBoxPassword.Size = new System.Drawing.Size(115, 17);
+            this.metroCheckBoxPassword.TabIndex = 8;
+            this.metroCheckBoxPassword.Text = "Show Password";
+            this.metroCheckBoxPassword.UseVisualStyleBackColor = true;
+            this.metroCheckBoxPassword.CheckedChanged += new System.EventHandler(this.metroCheckBoxPassword_CheckedChanged);
             // 
             // LoginForm
             // 
@@ -97,6 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(450, 482);
+            this.Controls.Add(this.metroCheckBoxPassword);
             this.Controls.Add(this.metroButtonLogin);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
@@ -121,5 +134,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton metroButtonLogin;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBoxPassword;
     }
 }

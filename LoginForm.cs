@@ -97,5 +97,16 @@ namespace AttendanceAppDesktop
             }
         }
 
+        private void metroCheckBoxPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (metroCheckBoxPassword.Checked)
+            {
+                metroTextBoxPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                metroTextBoxPassword.PasswordChar = '*';
+            }
+        }
     }
 }
