@@ -40,14 +40,14 @@
             // 
             // metroLabelAdminWindow
             // 
-            this.metroLabelAdminWindow.AutoSize = true;
             this.metroLabelAdminWindow.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelAdminWindow.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabelAdminWindow.Location = new System.Drawing.Point(304, 9);
+            this.metroLabelAdminWindow.Location = new System.Drawing.Point(12, 9);
             this.metroLabelAdminWindow.Name = "metroLabelAdminWindow";
-            this.metroLabelAdminWindow.Size = new System.Drawing.Size(165, 25);
+            this.metroLabelAdminWindow.Size = new System.Drawing.Size(776, 30);
             this.metroLabelAdminWindow.TabIndex = 0;
             this.metroLabelAdminWindow.Text = "Dashboard Admin";
+            this.metroLabelAdminWindow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabelAdminWindow.Click += new System.EventHandler(this.metroLabelAdminWindow_Click);
             // 
             // metroLabelRole

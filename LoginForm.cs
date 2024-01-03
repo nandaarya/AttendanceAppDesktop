@@ -141,5 +141,10 @@ namespace AttendanceAppDesktop
                 metroTextBoxPassword.PasswordChar = '*';
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

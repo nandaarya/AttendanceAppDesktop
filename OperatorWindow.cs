@@ -31,5 +31,30 @@ namespace AttendanceAppDesktop
         {
 
         }
+
+        private void metroLabelAddAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextBoxName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabelIDEvent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabelEditAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
