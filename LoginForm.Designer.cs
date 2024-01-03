@@ -41,7 +41,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 46);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(355, 158);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -52,16 +52,16 @@
             // 
             this.metroTextBoxEmail.Location = new System.Drawing.Point(48, 269);
             this.metroTextBoxEmail.Name = "metroTextBoxEmail";
-            this.metroTextBoxEmail.Size = new System.Drawing.Size(355, 23);
-            this.metroTextBoxEmail.TabIndex = 1;
+            this.metroTextBoxEmail.Size = new System.Drawing.Size(355, 22);
+            this.metroTextBoxEmail.TabIndex = 7;
             // 
             // metroTextBoxPassword
             // 
             this.metroTextBoxPassword.Location = new System.Drawing.Point(48, 333);
             this.metroTextBoxPassword.Name = "metroTextBoxPassword";
             this.metroTextBoxPassword.PasswordChar = '*';
-            this.metroTextBoxPassword.Size = new System.Drawing.Size(355, 23);
-            this.metroTextBoxPassword.TabIndex = 2;
+            this.metroTextBoxPassword.Size = new System.Drawing.Size(355, 22);
+            this.metroTextBoxPassword.TabIndex = 6;
             // 
             // metroLabel1
             // 
@@ -89,6 +89,7 @@
             this.metroButtonLogin.Size = new System.Drawing.Size(355, 23);
             this.metroButtonLogin.TabIndex = 5;
             this.metroButtonLogin.Text = "Login";
+            this.metroButtonLogin.Click += new System.EventHandler(this.metroButtonLogin_Click);
             // 
             // LoginForm
             // 
@@ -104,8 +105,8 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LoginForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

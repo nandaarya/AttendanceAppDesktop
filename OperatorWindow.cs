@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace AttendanceAppDesktop
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class OperatorWindow : Form
     {
-        public Form1()
+        public OperatorWindow()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void metroLabel1_Click(object sender, EventArgs e)
         {
 
         }
