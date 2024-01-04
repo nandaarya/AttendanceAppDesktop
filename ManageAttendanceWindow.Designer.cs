@@ -55,6 +55,7 @@
             this.metroLabelDeleteIDAttendance = new MetroFramework.Controls.MetroLabel();
             this.metroLabelDeleteAttendance = new MetroFramework.Controls.MetroLabel();
             this.metroComboBoxEvent = new MetroFramework.Controls.MetroComboBox();
+            this.metroButtonExport = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -332,12 +333,23 @@
             this.metroComboBoxEvent.Size = new System.Drawing.Size(304, 30);
             this.metroComboBoxEvent.TabIndex = 62;
             // 
+            // metroButtonExport
+            // 
+            this.metroButtonExport.AutoSize = true;
+            this.metroButtonExport.Location = new System.Drawing.Point(997, 79);
+            this.metroButtonExport.Name = "metroButtonExport";
+            this.metroButtonExport.Size = new System.Drawing.Size(215, 26);
+            this.metroButtonExport.TabIndex = 63;
+            this.metroButtonExport.Text = "Export Data";
+            this.metroButtonExport.Click += new System.EventHandler(this.metroButtonExport_Click);
+            // 
             // ManageAttendanceWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1224, 730);
+            this.Controls.Add(this.metroButtonExport);
             this.Controls.Add(this.metroComboBoxEvent);
             this.Controls.Add(this.metroButtonDelete);
             this.Controls.Add(this.metroTextBoxDeleteIDAttendace);
@@ -404,5 +416,6 @@
         private MetroFramework.Controls.MetroLabel metroLabelDeleteIDAttendance;
         private MetroFramework.Controls.MetroLabel metroLabelDeleteAttendance;
         private MetroFramework.Controls.MetroComboBox metroComboBoxEvent;
+        private MetroFramework.Controls.MetroButton metroButtonExport;
     }
 }

@@ -177,5 +177,37 @@ namespace AttendanceAppDesktop
                 updateAttendanceTable();
             }
         }
+
+        private void metroButtonExport_Click(object sender, EventArgs e)
+        {
+            DataGridView dataGridView = dataGridView1;
+            Type excelType = Type.GetTypeFromProgID("Excel.Application");
+
+            if (excelType != null)
+            {
+                dynamic excel = Activator.CreateInstance(excelType);
+                excel.Visible = true;
+                dynamic workbook = excel.Workbooks.Add();
+                dynamic sheet = workbook.ActiveSheet;
+
+                for (int i = 0; i < dataGridView.Columns.Count; i++)
+                {
+                    sheet.Cells[1, i + 1] = dataGridView.Columns[i].HeaderText;
+                }
+
+                for (int i = 0; i < dataGridView.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dataGridView.Columns.Count; j++)
+                    {
+                        dynamic cellValue = dataGridView.Rows[i].Cells[j].Value;
+                        sheet.Cells[i + 2, j + 1].Value = cellValue?.ToString();
+                    }
+                }
+                for (int i = 1; i <= dataGridView.Columns.Count; i++)
+                {
+                    sheet.Columns[i].AutoFit();
+                }
+            }
+        }
     }
 }
