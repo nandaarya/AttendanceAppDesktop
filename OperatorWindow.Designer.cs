@@ -46,7 +46,6 @@
             this.metroRadioButtonAddIzin = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButtonAddAbsent = new MetroFramework.Controls.MetroRadioButton();
             this.metroButtonAdd = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroRadioButtonEditAbsent = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButtonEditIzin = new MetroFramework.Controls.MetroRadioButton();
             this.metroRadioButtonEditTelat = new MetroFramework.Controls.MetroRadioButton();
@@ -61,6 +60,7 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.metroButtonEdit = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -252,14 +252,6 @@
             this.metroButtonAdd.Text = "Add";
             this.metroButtonAdd.Click += new System.EventHandler(this.metroButtonAdd_Click);
             // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(497, 337);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(304, 23);
-            this.metroButton1.TabIndex = 30;
-            this.metroButton1.Text = "Edit";
-            // 
             // metroRadioButtonEditAbsent
             // 
             this.metroRadioButtonEditAbsent.AutoSize = true;
@@ -402,12 +394,22 @@
             this.dataGridView2.Size = new System.Drawing.Size(578, 367);
             this.dataGridView2.TabIndex = 37;
             // 
+            // metroButtonEdit
+            // 
+            this.metroButtonEdit.Location = new System.Drawing.Point(497, 347);
+            this.metroButtonEdit.Name = "metroButtonEdit";
+            this.metroButtonEdit.Size = new System.Drawing.Size(304, 23);
+            this.metroButtonEdit.TabIndex = 38;
+            this.metroButtonEdit.Text = "Edit";
+            this.metroButtonEdit.Click += new System.EventHandler(this.metroButtonEdit_Click);
+            // 
             // OperatorWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1292, 845);
+            this.Controls.Add(this.metroButtonEdit);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -415,7 +417,6 @@
             this.Controls.Add(this.metroButtonDelete);
             this.Controls.Add(this.metroTextBoxDeleteIDAttendace);
             this.Controls.Add(this.metroLabelDeleteIDAttendance);
-            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroRadioButtonEditAbsent);
             this.Controls.Add(this.metroRadioButtonEditIzin);
             this.Controls.Add(this.metroRadioButtonEditTelat);
@@ -472,7 +473,6 @@
         private MetroFramework.Controls.MetroRadioButton metroRadioButtonAddIzin;
         private MetroFramework.Controls.MetroRadioButton metroRadioButtonAddAbsent;
         private MetroFramework.Controls.MetroButton metroButtonAdd;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroRadioButton metroRadioButtonEditAbsent;
         private MetroFramework.Controls.MetroRadioButton metroRadioButtonEditIzin;
         private MetroFramework.Controls.MetroRadioButton metroRadioButtonEditTelat;
@@ -487,5 +487,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private MetroFramework.Controls.MetroButton metroButtonEdit;
     }
 }

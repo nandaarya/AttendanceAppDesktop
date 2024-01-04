@@ -140,7 +140,7 @@ namespace AttendanceAppDesktop
             {
                 status = "Izin";
             }
-            else if (metroRadioButtonEditAbsent.Checked)
+            else if (metroRadioButtonAddAbsent.Checked)
             {
                 status = "Absent";
             }
@@ -177,6 +177,46 @@ namespace AttendanceAppDesktop
             cmd.ExecuteNonQuery();
             conn.Close();
             metroTextBoxName.Clear();
+
+            updateAttendanceTable();
+        }
+
+        private void metroButtonEdit_Click(object sender, EventArgs e)
+        {
+            string status = null;
+
+            if (metroRadioButtonEditHadir.Checked)
+            {
+                status = "Hadir";
+            }
+            else if (metroRadioButtonEditTelat.Checked)
+            {
+                status = "Telat";
+            }
+            else if (metroRadioButtonEditIzin.Checked)
+            {
+                status = "Izin";
+            }
+            else if (metroRadioButtonEditAbsent.Checked)
+            {
+                status = "Absent";
+            }
+
+            string id = metroTextBoxEditIDAttendance.Text.ToString();
+
+            // Periksa apakah nama, event, dan status tidak kosong
+            if (string.IsNullOrEmpty(status) || string.IsNullOrEmpty(id))
+            {
+                MessageBox.Show("ID Attendance dan status harus diisi!");
+                return; // Keluar dari metode jika ada yang kosong
+            }
+
+            conn.Open();
+            string editAbsen = $"UPDATE attendance SET status = '{status}' WHERE id = {id}";
+            cmd = new MySqlCommand(editAbsen, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            metroTextBoxEditIDAttendance.Clear();
 
             updateAttendanceTable();
         }
