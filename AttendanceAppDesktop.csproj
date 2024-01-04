@@ -124,6 +124,24 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageAccountsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAccountsWindow.Designer.cs">
+      <DependentUpon>ManageAccountsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAttendanceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAttendanceWindow.Designer.cs">
+      <DependentUpon>ManageAttendanceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEventsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEventsWindow.Designer.cs">
+      <DependentUpon>ManageEventsWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="OperatorWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +161,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAccountsWindow.resx">
+      <DependentUpon>ManageAccountsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAttendanceWindow.resx">
+      <DependentUpon>ManageAttendanceWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEventsWindow.resx">
+      <DependentUpon>ManageEventsWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OperatorWindow.resx">
       <DependentUpon>OperatorWindow.cs</DependentUpon>

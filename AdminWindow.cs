@@ -42,5 +42,23 @@ namespace AttendanceAppDesktop
             LoginForm loginWindowInstance = new LoginForm();
             loginWindowInstance.Show();
         }
+
+        private void metroButtonManageAccounts_Click(object sender, EventArgs e)
+        {
+            ManageAccountsWindow manageAccountsWindow = new ManageAccountsWindow();
+            manageAccountsWindow.Show();
+        }
+
+        private void metroButtonManageEvents_Click(object sender, EventArgs e)
+        {
+            ManageEventsWindow manageEventsWindow = new ManageEventsWindow();
+            manageEventsWindow.Show();
+        }
+
+        private void metroButtonManageAttendance_Click(object sender, EventArgs e)
+        {
+            ManageAttendanceWindow manageAttendanceWindow = new ManageAttendanceWindow();
+            manageAttendanceWindow.Show();
+        }
     }
 }
