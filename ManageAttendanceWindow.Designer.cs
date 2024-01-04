@@ -202,6 +202,7 @@
             this.metroButtonEdit.Size = new System.Drawing.Size(304, 23);
             this.metroButtonEdit.TabIndex = 57;
             this.metroButtonEdit.Text = "Edit";
+            this.metroButtonEdit.Click += new System.EventHandler(this.metroButtonEdit_Click);
             // 
             // metroRadioButtonEditAbsent
             // 
@@ -292,6 +293,7 @@
             this.metroButtonDelete.Size = new System.Drawing.Size(304, 23);
             this.metroButtonDelete.TabIndex = 61;
             this.metroButtonDelete.Text = "Delete";
+            this.metroButtonDelete.Click += new System.EventHandler(this.metroButtonDelete_Click);
             // 
             // metroTextBoxDeleteIDAttendace
             // 
