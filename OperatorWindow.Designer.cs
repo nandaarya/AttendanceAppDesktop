@@ -117,6 +117,7 @@
             this.metroButtonLogout.Size = new System.Drawing.Size(106, 25);
             this.metroButtonLogout.TabIndex = 9;
             this.metroButtonLogout.Text = "Logout";
+            this.metroButtonLogout.Click += new System.EventHandler(this.metroButtonLogout_Click);
             // 
             // metroLabelAddAttendance
             // 

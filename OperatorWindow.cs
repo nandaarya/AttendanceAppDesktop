@@ -243,5 +243,14 @@ namespace AttendanceAppDesktop
                 updateAttendanceTable();
             }
         }
+
+        private void metroButtonLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm.Session.destroySession();
+
+            this.Close();
+            LoginForm loginWindowInstance = new LoginForm();
+            loginWindowInstance.Show();
+        }
     }
 }
