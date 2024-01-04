@@ -57,6 +57,12 @@
             this.metroTextBoxDeleteIDAttendace = new MetroFramework.Controls.MetroTextBox();
             this.metroLabelDeleteIDAttendance = new MetroFramework.Controls.MetroLabel();
             this.metroButtonDelete = new MetroFramework.Controls.MetroButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabelOperator
@@ -65,7 +71,7 @@
             this.metroLabelOperator.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabelOperator.Location = new System.Drawing.Point(12, 9);
             this.metroLabelOperator.Name = "metroLabelOperator";
-            this.metroLabelOperator.Size = new System.Drawing.Size(776, 30);
+            this.metroLabelOperator.Size = new System.Drawing.Size(1268, 30);
             this.metroLabelOperator.TabIndex = 0;
             this.metroLabelOperator.Text = "Dashboard Operator";
             this.metroLabelOperator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,7 +112,7 @@
             // 
             // metroButtonLogout
             // 
-            this.metroButtonLogout.Location = new System.Drawing.Point(682, 68);
+            this.metroButtonLogout.Location = new System.Drawing.Point(1174, 68);
             this.metroButtonLogout.Name = "metroButtonLogout";
             this.metroButtonLogout.Size = new System.Drawing.Size(106, 25);
             this.metroButtonLogout.TabIndex = 9;
@@ -129,7 +135,7 @@
             this.metroLabelEditAttendance.AutoSize = true;
             this.metroLabelEditAttendance.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelEditAttendance.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabelEditAttendance.Location = new System.Drawing.Point(279, 192);
+            this.metroLabelEditAttendance.Location = new System.Drawing.Point(497, 192);
             this.metroLabelEditAttendance.Name = "metroLabelEditAttendance";
             this.metroLabelEditAttendance.Size = new System.Drawing.Size(149, 25);
             this.metroLabelEditAttendance.TabIndex = 11;
@@ -141,7 +147,7 @@
             this.metroLabelDeleteAttendance.AutoSize = true;
             this.metroLabelDeleteAttendance.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelDeleteAttendance.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabelDeleteAttendance.Location = new System.Drawing.Point(556, 192);
+            this.metroLabelDeleteAttendance.Location = new System.Drawing.Point(976, 192);
             this.metroLabelDeleteAttendance.Name = "metroLabelDeleteAttendance";
             this.metroLabelDeleteAttendance.Size = new System.Drawing.Size(171, 25);
             this.metroLabelDeleteAttendance.TabIndex = 12;
@@ -161,7 +167,7 @@
             // 
             this.metroTextBoxName.Location = new System.Drawing.Point(12, 249);
             this.metroTextBoxName.Name = "metroTextBoxName";
-            this.metroTextBoxName.Size = new System.Drawing.Size(232, 23);
+            this.metroTextBoxName.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxName.TabIndex = 14;
             this.metroTextBoxName.Click += new System.EventHandler(this.metroTextBoxName_Click);
             // 
@@ -169,7 +175,7 @@
             // 
             this.metroTextBoxIDEvent.Location = new System.Drawing.Point(12, 298);
             this.metroTextBoxIDEvent.Name = "metroTextBoxIDEvent";
-            this.metroTextBoxIDEvent.Size = new System.Drawing.Size(232, 23);
+            this.metroTextBoxIDEvent.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxIDEvent.TabIndex = 16;
             // 
             // metroLabelIDEvent
@@ -207,7 +213,7 @@
             // metroRadioButtonAddTelat
             // 
             this.metroRadioButtonAddTelat.AutoSize = true;
-            this.metroRadioButtonAddTelat.Location = new System.Drawing.Point(74, 347);
+            this.metroRadioButtonAddTelat.Location = new System.Drawing.Point(93, 347);
             this.metroRadioButtonAddTelat.Name = "metroRadioButtonAddTelat";
             this.metroRadioButtonAddTelat.Size = new System.Drawing.Size(51, 17);
             this.metroRadioButtonAddTelat.TabIndex = 19;
@@ -218,7 +224,7 @@
             // metroRadioButtonAddIzin
             // 
             this.metroRadioButtonAddIzin.AutoSize = true;
-            this.metroRadioButtonAddIzin.Location = new System.Drawing.Point(131, 347);
+            this.metroRadioButtonAddIzin.Location = new System.Drawing.Point(175, 347);
             this.metroRadioButtonAddIzin.Name = "metroRadioButtonAddIzin";
             this.metroRadioButtonAddIzin.Size = new System.Drawing.Size(43, 17);
             this.metroRadioButtonAddIzin.TabIndex = 20;
@@ -229,7 +235,7 @@
             // metroRadioButtonAddAbsent
             // 
             this.metroRadioButtonAddAbsent.AutoSize = true;
-            this.metroRadioButtonAddAbsent.Location = new System.Drawing.Point(180, 347);
+            this.metroRadioButtonAddAbsent.Location = new System.Drawing.Point(252, 347);
             this.metroRadioButtonAddAbsent.Name = "metroRadioButtonAddAbsent";
             this.metroRadioButtonAddAbsent.Size = new System.Drawing.Size(64, 17);
             this.metroRadioButtonAddAbsent.TabIndex = 21;
@@ -241,22 +247,23 @@
             // 
             this.metroButtonAdd.Location = new System.Drawing.Point(12, 386);
             this.metroButtonAdd.Name = "metroButtonAdd";
-            this.metroButtonAdd.Size = new System.Drawing.Size(232, 23);
+            this.metroButtonAdd.Size = new System.Drawing.Size(304, 23);
             this.metroButtonAdd.TabIndex = 22;
             this.metroButtonAdd.Text = "Add";
+            this.metroButtonAdd.Click += new System.EventHandler(this.metroButtonAdd_Click);
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(279, 337);
+            this.metroButton1.Location = new System.Drawing.Point(497, 337);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(232, 23);
+            this.metroButton1.Size = new System.Drawing.Size(304, 23);
             this.metroButton1.TabIndex = 30;
             this.metroButton1.Text = "Edit";
             // 
             // metroRadioButtonEditAbsent
             // 
             this.metroRadioButtonEditAbsent.AutoSize = true;
-            this.metroRadioButtonEditAbsent.Location = new System.Drawing.Point(447, 298);
+            this.metroRadioButtonEditAbsent.Location = new System.Drawing.Point(737, 298);
             this.metroRadioButtonEditAbsent.Name = "metroRadioButtonEditAbsent";
             this.metroRadioButtonEditAbsent.Size = new System.Drawing.Size(64, 17);
             this.metroRadioButtonEditAbsent.TabIndex = 29;
@@ -267,18 +274,19 @@
             // metroRadioButtonEditIzin
             // 
             this.metroRadioButtonEditIzin.AutoSize = true;
-            this.metroRadioButtonEditIzin.Location = new System.Drawing.Point(398, 298);
+            this.metroRadioButtonEditIzin.Location = new System.Drawing.Point(664, 298);
             this.metroRadioButtonEditIzin.Name = "metroRadioButtonEditIzin";
             this.metroRadioButtonEditIzin.Size = new System.Drawing.Size(43, 17);
             this.metroRadioButtonEditIzin.TabIndex = 28;
             this.metroRadioButtonEditIzin.TabStop = true;
             this.metroRadioButtonEditIzin.Text = "Izin";
             this.metroRadioButtonEditIzin.UseVisualStyleBackColor = true;
+            this.metroRadioButtonEditIzin.CheckedChanged += new System.EventHandler(this.metroRadioButtonEditIzin_CheckedChanged);
             // 
             // metroRadioButtonEditTelat
             // 
             this.metroRadioButtonEditTelat.AutoSize = true;
-            this.metroRadioButtonEditTelat.Location = new System.Drawing.Point(341, 298);
+            this.metroRadioButtonEditTelat.Location = new System.Drawing.Point(583, 298);
             this.metroRadioButtonEditTelat.Name = "metroRadioButtonEditTelat";
             this.metroRadioButtonEditTelat.Size = new System.Drawing.Size(51, 17);
             this.metroRadioButtonEditTelat.TabIndex = 27;
@@ -289,7 +297,7 @@
             // metroRadioButtonEditHadir
             // 
             this.metroRadioButtonEditHadir.AutoSize = true;
-            this.metroRadioButtonEditHadir.Location = new System.Drawing.Point(279, 298);
+            this.metroRadioButtonEditHadir.Location = new System.Drawing.Point(497, 298);
             this.metroRadioButtonEditHadir.Name = "metroRadioButtonEditHadir";
             this.metroRadioButtonEditHadir.Size = new System.Drawing.Size(56, 17);
             this.metroRadioButtonEditHadir.TabIndex = 26;
@@ -301,7 +309,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(279, 275);
+            this.metroLabel2.Location = new System.Drawing.Point(497, 275);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(49, 20);
             this.metroLabel2.TabIndex = 25;
@@ -309,16 +317,16 @@
             // 
             // metroTextBoxEditIDAttendance
             // 
-            this.metroTextBoxEditIDAttendance.Location = new System.Drawing.Point(279, 249);
+            this.metroTextBoxEditIDAttendance.Location = new System.Drawing.Point(497, 249);
             this.metroTextBoxEditIDAttendance.Name = "metroTextBoxEditIDAttendance";
-            this.metroTextBoxEditIDAttendance.Size = new System.Drawing.Size(232, 23);
+            this.metroTextBoxEditIDAttendance.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxEditIDAttendance.TabIndex = 24;
             // 
             // metroLabelEditIDAttendance
             // 
             this.metroLabelEditIDAttendance.AutoSize = true;
             this.metroLabelEditIDAttendance.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelEditIDAttendance.Location = new System.Drawing.Point(279, 226);
+            this.metroLabelEditIDAttendance.Location = new System.Drawing.Point(497, 226);
             this.metroLabelEditIDAttendance.Name = "metroLabelEditIDAttendance";
             this.metroLabelEditIDAttendance.Size = new System.Drawing.Size(104, 20);
             this.metroLabelEditIDAttendance.TabIndex = 23;
@@ -326,16 +334,16 @@
             // 
             // metroTextBoxDeleteIDAttendace
             // 
-            this.metroTextBoxDeleteIDAttendace.Location = new System.Drawing.Point(556, 249);
+            this.metroTextBoxDeleteIDAttendace.Location = new System.Drawing.Point(976, 249);
             this.metroTextBoxDeleteIDAttendace.Name = "metroTextBoxDeleteIDAttendace";
-            this.metroTextBoxDeleteIDAttendace.Size = new System.Drawing.Size(232, 23);
+            this.metroTextBoxDeleteIDAttendace.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxDeleteIDAttendace.TabIndex = 32;
             // 
             // metroLabelDeleteIDAttendance
             // 
             this.metroLabelDeleteIDAttendance.AutoSize = true;
             this.metroLabelDeleteIDAttendance.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelDeleteIDAttendance.Location = new System.Drawing.Point(556, 226);
+            this.metroLabelDeleteIDAttendance.Location = new System.Drawing.Point(976, 226);
             this.metroLabelDeleteIDAttendance.Name = "metroLabelDeleteIDAttendance";
             this.metroLabelDeleteIDAttendance.Size = new System.Drawing.Size(104, 20);
             this.metroLabelDeleteIDAttendance.TabIndex = 31;
@@ -343,18 +351,67 @@
             // 
             // metroButtonDelete
             // 
-            this.metroButtonDelete.Location = new System.Drawing.Point(556, 292);
+            this.metroButtonDelete.Location = new System.Drawing.Point(976, 292);
             this.metroButtonDelete.Name = "metroButtonDelete";
-            this.metroButtonDelete.Size = new System.Drawing.Size(232, 23);
+            this.metroButtonDelete.Size = new System.Drawing.Size(304, 23);
             this.metroButtonDelete.TabIndex = 33;
             this.metroButtonDelete.Text = "Delete";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 466);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(665, 367);
+            this.dataGridView1.TabIndex = 34;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel3.Location = new System.Drawing.Point(12, 428);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(156, 25);
+            this.metroLabel3.TabIndex = 35;
+            this.metroLabel3.Text = "Attendance Data";
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel4.Location = new System.Drawing.Point(702, 428);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(113, 25);
+            this.metroLabel4.TabIndex = 36;
+            this.metroLabel4.Text = "Events Data";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(702, 466);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(578, 367);
+            this.dataGridView2.TabIndex = 37;
             // 
             // OperatorWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 779);
+            this.ClientSize = new System.Drawing.Size(1292, 845);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.metroButtonDelete);
             this.Controls.Add(this.metroTextBoxDeleteIDAttendace);
             this.Controls.Add(this.metroLabelDeleteIDAttendance);
@@ -388,6 +445,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OperatorWindow";
             this.Load += new System.EventHandler(this.OperatorWindow_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +483,9 @@
         private MetroFramework.Controls.MetroTextBox metroTextBoxDeleteIDAttendace;
         private MetroFramework.Controls.MetroLabel metroLabelDeleteIDAttendance;
         private MetroFramework.Controls.MetroButton metroButtonDelete;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

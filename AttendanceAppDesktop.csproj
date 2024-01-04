@@ -117,6 +117,7 @@
     <Compile Include="AdminWindow.Designer.cs">
       <DependentUpon>AdminWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="class\koneksi.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
