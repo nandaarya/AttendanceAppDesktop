@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AttendanceAppDesktop
 {
@@ -177,6 +178,7 @@ namespace AttendanceAppDesktop
             cmd.ExecuteNonQuery();
             conn.Close();
             metroTextBoxName.Clear();
+            metroTextBoxIDEvent.Clear();
 
             updateAttendanceTable();
         }
@@ -219,6 +221,27 @@ namespace AttendanceAppDesktop
             metroTextBoxEditIDAttendance.Clear();
 
             updateAttendanceTable();
+        }
+
+        private void metroButtonDelete_Click(object sender, EventArgs e)
+        {
+            string id = metroTextBoxDeleteIDAttendace.Text.ToString();
+
+            if (string.IsNullOrEmpty(id))
+            {
+                MessageBox.Show("ID Attendance harus diisi!");
+                return; // Keluar dari metode jika ada yang kosong
+            } else
+            {
+                conn.Open();
+                string delAbsen = $"DELETE FROM attendance WHERE id = {id}";
+                cmd = new MySqlCommand(delAbsen, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                metroTextBoxDeleteIDAttendace.Clear();
+
+                updateAttendanceTable();
+            }
         }
     }
 }
