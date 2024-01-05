@@ -61,6 +61,10 @@ namespace AttendanceAppDesktop
             metroComboBoxAddRole.Items.Add("admin");
             metroComboBoxAddRole.Items.Add("operator");
             metroComboBoxAddRole.Items.Add("participant");
+
+            metroComboBoxEditRole.Items.Add("admin");
+            metroComboBoxEditRole.Items.Add("operator");
+            metroComboBoxEditRole.Items.Add("participant");
         }
 
         private void metroButtonAdd_Click(object sender, EventArgs e)
@@ -131,6 +135,95 @@ namespace AttendanceAppDesktop
             else
             {
                 metroTextBoxAddPassword.PasswordChar = '*';
+            }
+        }
+
+        private void metroButtonFetch_Click(object sender, EventArgs e)
+        {
+            string id = metroTextBoxEditIDAccount.Text.ToString();
+
+            conn.Open();
+            string query = $"SELECT * FROM users WHERE id = {id}";
+            cmd = new MySqlCommand(query, conn);
+
+            using (MySqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    string name = reader["name"].ToString();
+                    string email = reader["email"].ToString();
+
+                    metroTextBoxEditName.Text = name;
+                    metroTextBoxEditEmail.Text = email;
+
+                    metroTextBoxEditName.Enabled = true;
+                    metroTextBoxEditEmail.Enabled = true;
+                    metroComboBoxEditRole.Enabled = true;
+                    metroTextBoxEditPassword.Enabled = true;
+                    metroCheckBoxEditPassword.Enabled = true;
+                    metroButtonEdit.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show($"Tidak ditemukan Account dengan id: {id}");
+                    metroTextBoxEditIDAccount.Clear();
+                }
+                conn.Close();
+            }
+        }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroButtonEdit_Click(object sender, EventArgs e)
+        {
+            string id = metroTextBoxEditIDAccount.Text.Trim().ToString();
+            string name = metroTextBoxEditName.Text.Trim().ToString();
+            string email = metroTextBoxEditEmail.Text.Trim().ToString();
+            string role = metroComboBoxEditRole.SelectedItem?.ToString();
+            string rawPassword = metroTextBoxEditPassword.Text.Trim().ToString();
+            string password = hashPassword(rawPassword);
+
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(role) || string.IsNullOrEmpty(rawPassword))
+            {
+                MessageBox.Show("Semua Data Harus diisi!");
+            }
+            else
+            {
+                conn.Open();
+                string register = $"UPDATE users SET name = '{name}',email = '{email}', password = '{password}', role = '{role}' WHERE id = {id}";
+                cmd = new MySqlCommand(register, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Berhasil Diedit!");
+                conn.Close();
+
+                metroTextBoxEditIDAccount.Clear();
+                metroTextBoxEditName.Clear();
+                metroTextBoxEditEmail.Clear();
+                metroTextBoxEditPassword.Clear();
+
+                metroTextBoxEditName.Enabled = false;
+                metroTextBoxEditEmail.Enabled = false;
+                metroComboBoxEditRole.Enabled = false;
+                metroTextBoxEditPassword.Enabled = false;
+                metroCheckBoxEditPassword.Enabled = false;
+                metroButtonEdit.Enabled = false;
+
+                updateAccountTable();
+            }
+        }
+
+        private void metroCheckBoxEditPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (metroCheckBoxEditPassword.Checked)
+            {
+                metroTextBoxEditPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                metroTextBoxEditPassword.PasswordChar = '*';
             }
         }
     }
