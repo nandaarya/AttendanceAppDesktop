@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -62,7 +63,8 @@ namespace AttendanceAppDesktop
             using (MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn))
             {
                 string email = metroTextBoxEmail.Text.Trim();
-                string password = metroTextBoxPassword.Text.Trim();
+                string rawPassword = metroTextBoxPassword.Text.Trim();
+                string password = hashPassword(rawPassword);
 
                 if (String.IsNullOrEmpty(email) || String.IsNullOrEmpty(password))
                 {
@@ -127,6 +129,25 @@ namespace AttendanceAppDesktop
                         mySqlConnection.Close();
                     }
                 }
+            }
+        }
+
+        private string hashPassword(string password)
+        {
+            // Gunakan algoritma hash kriptografis, misalnya SHA-256
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // Konversi password menjadi byte array
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                // Ubah byte array menjadi string hex
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+
+                return builder.ToString();
             }
         }
 
