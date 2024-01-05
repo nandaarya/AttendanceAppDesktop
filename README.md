@@ -26,15 +26,15 @@ Build using:
   - View their attendance (all events) and view all events
 
 ## Trial User Account (If You Use My Local Database inside database folder in this repo) ##
-- Admin
-  Email: admin@gmail.com
-  password: admin
-- Operator
-  Email: operator@gmail.com
-  password: operator
-- Participant
-  Email: nanda@gmail.com
-  password: participant
+- Admin \n
+  Email: admin@gmail.com \n
+  password: admin \n
+- Operator \n
+  Email: operator@gmail.com \n
+  password: operator \n
+- Participant \n
+  Email: nanda@gmail.com \n
+  password: participant \n
 
 ## Show Case / User Interface ##
 - Login window
