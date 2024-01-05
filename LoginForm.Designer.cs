@@ -59,7 +59,7 @@
             // 
             // metroTextBoxPassword
             // 
-            this.metroTextBoxPassword.Location = new System.Drawing.Point(48, 303);
+            this.metroTextBoxPassword.Location = new System.Drawing.Point(48, 313);
             this.metroTextBoxPassword.Name = "metroTextBoxPassword";
             this.metroTextBoxPassword.PasswordChar = '*';
             this.metroTextBoxPassword.Size = new System.Drawing.Size(355, 22);
@@ -78,7 +78,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(48, 280);
+            this.metroLabel2.Location = new System.Drawing.Point(48, 281);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(66, 20);
             this.metroLabel2.TabIndex = 4;
@@ -96,7 +96,7 @@
             // metroCheckBoxPassword
             // 
             this.metroCheckBoxPassword.AutoSize = true;
-            this.metroCheckBoxPassword.Location = new System.Drawing.Point(48, 332);
+            this.metroCheckBoxPassword.Location = new System.Drawing.Point(48, 342);
             this.metroCheckBoxPassword.Name = "metroCheckBoxPassword";
             this.metroCheckBoxPassword.Size = new System.Drawing.Size(115, 17);
             this.metroCheckBoxPassword.TabIndex = 8;
