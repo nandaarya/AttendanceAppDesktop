@@ -100,6 +100,7 @@
             this.metroButtonExport.Size = new System.Drawing.Size(215, 26);
             this.metroButtonExport.TabIndex = 122;
             this.metroButtonExport.Text = "Export Data";
+            this.metroButtonExport.Click += new System.EventHandler(this.metroButtonExport_Click);
             // 
             // metroButtonDelete
             // 
