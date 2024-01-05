@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace AttendanceAppDesktop
 {
@@ -224,6 +225,28 @@ namespace AttendanceAppDesktop
             else
             {
                 metroTextBoxEditPassword.PasswordChar = '*';
+            }
+        }
+
+        private void metroButtonDelete_Click(object sender, EventArgs e)
+        {
+            string id = metroTextBoxDeleteIDAccount.Text.ToString();
+
+            if (string.IsNullOrEmpty(id))
+            {
+                MessageBox.Show("ID Account Harus diisi!");
+            }
+            else
+            {
+                conn.Open();
+                string deleletAccount = $"DELETE FROM users WHERE id = {id}";
+                cmd = new MySqlCommand(deleletAccount, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+                metroTextBoxDeleteIDAccount.Clear();
+
+                updateAccountTable();
             }
         }
     }

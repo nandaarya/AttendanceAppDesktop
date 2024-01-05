@@ -78,7 +78,7 @@
             // 
             // metroButtonFetch
             // 
-            this.metroButtonFetch.Location = new System.Drawing.Point(240, 444);
+            this.metroButtonFetch.Location = new System.Drawing.Point(240, 417);
             this.metroButtonFetch.Name = "metroButtonFetch";
             this.metroButtonFetch.Size = new System.Drawing.Size(75, 23);
             this.metroButtonFetch.TabIndex = 136;
@@ -87,7 +87,7 @@
             // 
             // metroTextBoxAddEmail
             // 
-            this.metroTextBoxAddEmail.Location = new System.Drawing.Point(12, 186);
+            this.metroTextBoxAddEmail.Location = new System.Drawing.Point(12, 158);
             this.metroTextBoxAddEmail.Name = "metroTextBoxAddEmail";
             this.metroTextBoxAddEmail.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxAddEmail.TabIndex = 123;
@@ -95,7 +95,7 @@
             // metroButtonExport
             // 
             this.metroButtonExport.AutoSize = true;
-            this.metroButtonExport.Location = new System.Drawing.Point(997, 86);
+            this.metroButtonExport.Location = new System.Drawing.Point(997, 58);
             this.metroButtonExport.Name = "metroButtonExport";
             this.metroButtonExport.Size = new System.Drawing.Size(215, 26);
             this.metroButtonExport.TabIndex = 122;
@@ -103,15 +103,16 @@
             // 
             // metroButtonDelete
             // 
-            this.metroButtonDelete.Location = new System.Drawing.Point(10, 854);
+            this.metroButtonDelete.Location = new System.Drawing.Point(10, 815);
             this.metroButtonDelete.Name = "metroButtonDelete";
             this.metroButtonDelete.Size = new System.Drawing.Size(304, 23);
             this.metroButtonDelete.TabIndex = 121;
             this.metroButtonDelete.Text = "Delete";
+            this.metroButtonDelete.Click += new System.EventHandler(this.metroButtonDelete_Click);
             // 
             // metroTextBoxDeleteIDAccount
             // 
-            this.metroTextBoxDeleteIDAccount.Location = new System.Drawing.Point(10, 811);
+            this.metroTextBoxDeleteIDAccount.Location = new System.Drawing.Point(10, 772);
             this.metroTextBoxDeleteIDAccount.Name = "metroTextBoxDeleteIDAccount";
             this.metroTextBoxDeleteIDAccount.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxDeleteIDAccount.TabIndex = 120;
@@ -120,7 +121,7 @@
             // 
             this.metroLabelDeleteIDEvent.AutoSize = true;
             this.metroLabelDeleteIDEvent.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelDeleteIDEvent.Location = new System.Drawing.Point(10, 788);
+            this.metroLabelDeleteIDEvent.Location = new System.Drawing.Point(10, 749);
             this.metroLabelDeleteIDEvent.Name = "metroLabelDeleteIDEvent";
             this.metroLabelDeleteIDEvent.Size = new System.Drawing.Size(82, 20);
             this.metroLabelDeleteIDEvent.TabIndex = 119;
@@ -131,7 +132,7 @@
             this.metroLabelDeleteAccount.AutoSize = true;
             this.metroLabelDeleteAccount.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelDeleteAccount.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabelDeleteAccount.Location = new System.Drawing.Point(10, 754);
+            this.metroLabelDeleteAccount.Location = new System.Drawing.Point(10, 715);
             this.metroLabelDeleteAccount.Name = "metroLabelDeleteAccount";
             this.metroLabelDeleteAccount.Size = new System.Drawing.Size(143, 25);
             this.metroLabelDeleteAccount.TabIndex = 118;
@@ -140,7 +141,7 @@
             // metroButtonEdit
             // 
             this.metroButtonEdit.Enabled = false;
-            this.metroButtonEdit.Location = new System.Drawing.Point(10, 717);
+            this.metroButtonEdit.Location = new System.Drawing.Point(10, 690);
             this.metroButtonEdit.Name = "metroButtonEdit";
             this.metroButtonEdit.Size = new System.Drawing.Size(304, 23);
             this.metroButtonEdit.TabIndex = 117;
@@ -149,7 +150,7 @@
             // 
             // metroTextBoxEditIDAccount
             // 
-            this.metroTextBoxEditIDAccount.Location = new System.Drawing.Point(11, 444);
+            this.metroTextBoxEditIDAccount.Location = new System.Drawing.Point(11, 417);
             this.metroTextBoxEditIDAccount.Name = "metroTextBoxEditIDAccount";
             this.metroTextBoxEditIDAccount.Size = new System.Drawing.Size(223, 23);
             this.metroTextBoxEditIDAccount.TabIndex = 116;
@@ -158,7 +159,7 @@
             // 
             this.metroLabelEditIDAccount.AutoSize = true;
             this.metroLabelEditIDAccount.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelEditIDAccount.Location = new System.Drawing.Point(11, 421);
+            this.metroLabelEditIDAccount.Location = new System.Drawing.Point(11, 394);
             this.metroLabelEditIDAccount.Name = "metroLabelEditIDAccount";
             this.metroLabelEditIDAccount.Size = new System.Drawing.Size(82, 20);
             this.metroLabelEditIDAccount.TabIndex = 115;
@@ -169,7 +170,7 @@
             this.metroLabelEditAccount.AutoSize = true;
             this.metroLabelEditAccount.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelEditAccount.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabelEditAccount.Location = new System.Drawing.Point(11, 387);
+            this.metroLabelEditAccount.Location = new System.Drawing.Point(11, 360);
             this.metroLabelEditAccount.Name = "metroLabelEditAccount";
             this.metroLabelEditAccount.Size = new System.Drawing.Size(121, 25);
             this.metroLabelEditAccount.TabIndex = 114;
@@ -177,7 +178,7 @@
             // 
             // metroButtonAdd
             // 
-            this.metroButtonAdd.Location = new System.Drawing.Point(12, 352);
+            this.metroButtonAdd.Location = new System.Drawing.Point(12, 324);
             this.metroButtonAdd.Name = "metroButtonAdd";
             this.metroButtonAdd.Size = new System.Drawing.Size(304, 23);
             this.metroButtonAdd.TabIndex = 113;
@@ -188,7 +189,7 @@
             // 
             this.metroLabelAddEmail.AutoSize = true;
             this.metroLabelAddEmail.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelAddEmail.Location = new System.Drawing.Point(12, 163);
+            this.metroLabelAddEmail.Location = new System.Drawing.Point(12, 135);
             this.metroLabelAddEmail.Name = "metroLabelAddEmail";
             this.metroLabelAddEmail.Size = new System.Drawing.Size(46, 20);
             this.metroLabelAddEmail.TabIndex = 112;
@@ -196,7 +197,7 @@
             // 
             // metroTextBoxAddName
             // 
-            this.metroTextBoxAddName.Location = new System.Drawing.Point(12, 137);
+            this.metroTextBoxAddName.Location = new System.Drawing.Point(12, 109);
             this.metroTextBoxAddName.Name = "metroTextBoxAddName";
             this.metroTextBoxAddName.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxAddName.TabIndex = 111;
@@ -205,7 +206,7 @@
             // 
             this.metroLabelAddName.AutoSize = true;
             this.metroLabelAddName.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelAddName.Location = new System.Drawing.Point(12, 114);
+            this.metroLabelAddName.Location = new System.Drawing.Point(12, 86);
             this.metroLabelAddName.Name = "metroLabelAddName";
             this.metroLabelAddName.Size = new System.Drawing.Size(49, 20);
             this.metroLabelAddName.TabIndex = 110;
@@ -216,7 +217,7 @@
             this.metroLabelAddAccount.AutoSize = true;
             this.metroLabelAddAccount.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelAddAccount.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabelAddAccount.Location = new System.Drawing.Point(12, 80);
+            this.metroLabelAddAccount.Location = new System.Drawing.Point(12, 52);
             this.metroLabelAddAccount.Name = "metroLabelAddAccount";
             this.metroLabelAddAccount.Size = new System.Drawing.Size(123, 25);
             this.metroLabelAddAccount.TabIndex = 109;
@@ -227,7 +228,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.Location = new System.Drawing.Point(357, 80);
+            this.metroLabel3.Location = new System.Drawing.Point(357, 52);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(136, 25);
             this.metroLabel3.TabIndex = 108;
@@ -239,7 +240,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(357, 118);
+            this.dataGridView1.Location = new System.Drawing.Point(357, 90);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -250,7 +251,7 @@
             // 
             this.metroLabelRole.AutoSize = true;
             this.metroLabelRole.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelRole.Location = new System.Drawing.Point(12, 212);
+            this.metroLabelRole.Location = new System.Drawing.Point(12, 184);
             this.metroLabelRole.Name = "metroLabelRole";
             this.metroLabelRole.Size = new System.Drawing.Size(39, 20);
             this.metroLabelRole.TabIndex = 137;
@@ -259,7 +260,7 @@
             // metroCheckBoxPassword
             // 
             this.metroCheckBoxPassword.AutoSize = true;
-            this.metroCheckBoxPassword.Location = new System.Drawing.Point(11, 329);
+            this.metroCheckBoxPassword.Location = new System.Drawing.Point(11, 301);
             this.metroCheckBoxPassword.Name = "metroCheckBoxPassword";
             this.metroCheckBoxPassword.Size = new System.Drawing.Size(115, 17);
             this.metroCheckBoxPassword.TabIndex = 142;
@@ -269,7 +270,7 @@
             // 
             // metroTextBoxAddPassword
             // 
-            this.metroTextBoxAddPassword.Location = new System.Drawing.Point(11, 300);
+            this.metroTextBoxAddPassword.Location = new System.Drawing.Point(11, 272);
             this.metroTextBoxAddPassword.Name = "metroTextBoxAddPassword";
             this.metroTextBoxAddPassword.PasswordChar = '*';
             this.metroTextBoxAddPassword.Size = new System.Drawing.Size(304, 22);
@@ -279,7 +280,7 @@
             // 
             this.metroLabelPassword.AutoSize = true;
             this.metroLabelPassword.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelPassword.Location = new System.Drawing.Point(12, 277);
+            this.metroLabelPassword.Location = new System.Drawing.Point(12, 249);
             this.metroLabelPassword.Name = "metroLabelPassword";
             this.metroLabelPassword.Size = new System.Drawing.Size(70, 20);
             this.metroLabelPassword.TabIndex = 143;
@@ -289,7 +290,7 @@
             // 
             this.metroComboBoxAddRole.FormattingEnabled = true;
             this.metroComboBoxAddRole.ItemHeight = 24;
-            this.metroComboBoxAddRole.Location = new System.Drawing.Point(11, 235);
+            this.metroComboBoxAddRole.Location = new System.Drawing.Point(11, 207);
             this.metroComboBoxAddRole.Name = "metroComboBoxAddRole";
             this.metroComboBoxAddRole.Size = new System.Drawing.Size(303, 30);
             this.metroComboBoxAddRole.TabIndex = 144;
@@ -299,7 +300,7 @@
             this.metroComboBoxEditRole.Enabled = false;
             this.metroComboBoxEditRole.FormattingEnabled = true;
             this.metroComboBoxEditRole.ItemHeight = 24;
-            this.metroComboBoxEditRole.Location = new System.Drawing.Point(10, 591);
+            this.metroComboBoxEditRole.Location = new System.Drawing.Point(10, 564);
             this.metroComboBoxEditRole.Name = "metroComboBoxEditRole";
             this.metroComboBoxEditRole.Size = new System.Drawing.Size(303, 30);
             this.metroComboBoxEditRole.TabIndex = 153;
@@ -308,7 +309,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(10, 633);
+            this.metroLabel1.Location = new System.Drawing.Point(10, 606);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(70, 20);
             this.metroLabel1.TabIndex = 152;
@@ -319,7 +320,7 @@
             // 
             this.metroCheckBoxEditPassword.AutoSize = true;
             this.metroCheckBoxEditPassword.Enabled = false;
-            this.metroCheckBoxEditPassword.Location = new System.Drawing.Point(10, 694);
+            this.metroCheckBoxEditPassword.Location = new System.Drawing.Point(10, 667);
             this.metroCheckBoxEditPassword.Name = "metroCheckBoxEditPassword";
             this.metroCheckBoxEditPassword.Size = new System.Drawing.Size(115, 17);
             this.metroCheckBoxEditPassword.TabIndex = 151;
@@ -330,7 +331,7 @@
             // metroTextBoxEditPassword
             // 
             this.metroTextBoxEditPassword.Enabled = false;
-            this.metroTextBoxEditPassword.Location = new System.Drawing.Point(10, 665);
+            this.metroTextBoxEditPassword.Location = new System.Drawing.Point(10, 638);
             this.metroTextBoxEditPassword.Name = "metroTextBoxEditPassword";
             this.metroTextBoxEditPassword.PasswordChar = '*';
             this.metroTextBoxEditPassword.Size = new System.Drawing.Size(304, 22);
@@ -340,7 +341,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(11, 568);
+            this.metroLabel2.Location = new System.Drawing.Point(11, 541);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(39, 20);
             this.metroLabel2.TabIndex = 149;
@@ -349,7 +350,7 @@
             // metroTextBoxEditEmail
             // 
             this.metroTextBoxEditEmail.Enabled = false;
-            this.metroTextBoxEditEmail.Location = new System.Drawing.Point(11, 542);
+            this.metroTextBoxEditEmail.Location = new System.Drawing.Point(11, 515);
             this.metroTextBoxEditEmail.Name = "metroTextBoxEditEmail";
             this.metroTextBoxEditEmail.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxEditEmail.TabIndex = 148;
@@ -358,7 +359,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(11, 519);
+            this.metroLabel4.Location = new System.Drawing.Point(11, 492);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(46, 20);
             this.metroLabel4.TabIndex = 147;
@@ -367,7 +368,7 @@
             // metroTextBoxEditName
             // 
             this.metroTextBoxEditName.Enabled = false;
-            this.metroTextBoxEditName.Location = new System.Drawing.Point(11, 493);
+            this.metroTextBoxEditName.Location = new System.Drawing.Point(11, 466);
             this.metroTextBoxEditName.Name = "metroTextBoxEditName";
             this.metroTextBoxEditName.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxEditName.TabIndex = 146;
@@ -376,7 +377,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(11, 470);
+            this.metroLabel5.Location = new System.Drawing.Point(11, 443);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(49, 20);
             this.metroLabel5.TabIndex = 145;
@@ -387,7 +388,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1224, 893);
+            this.ClientSize = new System.Drawing.Size(1224, 848);
             this.Controls.Add(this.metroComboBoxEditRole);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroCheckBoxEditPassword);
