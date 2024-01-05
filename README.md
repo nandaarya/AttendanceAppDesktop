@@ -25,31 +25,38 @@ Build using:
   - Record their attendance but only once per hour for each event
   - View their attendance (all events) and view all events
  
-### Show Case / User Interface ###
+## Show Case / User Interface ##
 - Login window
 
-![login]()
+![login](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Login_Window.png)
 
 - Admin window
 
-![admin]()
+![admin](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Admin_Window.png)
 
 - Manage Account window
 
-![Manage Account]()
+![Manage Account](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Manage_Account_Window.png)
 
 - Manage Attendance window
 
-![Manage Attendance]()
+![Manage Attendance](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Manage_Attendance.png)
 
 - Manage Events window
 
-![Manage Events]()
+![Manage Events](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Manage_Event_Window.png)
 
 - Operator window
-
-![operator]()
+  
+![operator](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Operator_Window.png)
 
 - Participant window
 
-![participant]()
+![participant](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Participant_Window.png)
+
+## Future Development ##
+Possible further feature development (Maybe XD):
+- Maybe create a better UI
+- Add Schedule Notification (Idk how to do it lol)
+- Add "Add Additional Information" for participant user
+- etc
