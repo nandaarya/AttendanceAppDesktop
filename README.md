@@ -24,7 +24,18 @@ Build using:
   - Login with secure credentials (Secure Password With Hash)
   - Record their attendance but only once per hour for each event
   - View their attendance (all events) and view all events
- 
+
+## Trial User Account (If You Use My Local Database inside database folder in this repo) ##
+- Admin
+  Email: admin@gmail.com
+  password: admin
+- Operator
+  Email: operator@gmail.com
+  password: operator
+- Participant
+  Email: nanda@gmail.com
+  password: participant
+
 ## Show Case / User Interface ##
 - Login window
 
