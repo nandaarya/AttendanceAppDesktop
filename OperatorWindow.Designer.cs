@@ -75,7 +75,6 @@
             this.metroLabelOperator.TabIndex = 0;
             this.metroLabelOperator.Text = "Dashboard Operator";
             this.metroLabelOperator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabelOperator.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
             // metroLabelName
             // 
@@ -129,7 +128,6 @@
             this.metroLabelAddAttendance.Size = new System.Drawing.Size(151, 25);
             this.metroLabelAddAttendance.TabIndex = 10;
             this.metroLabelAddAttendance.Text = "Add Attendance";
-            this.metroLabelAddAttendance.Click += new System.EventHandler(this.metroLabelAddAttendance_Click);
             // 
             // metroLabelEditAttendance
             // 
@@ -141,7 +139,6 @@
             this.metroLabelEditAttendance.Size = new System.Drawing.Size(149, 25);
             this.metroLabelEditAttendance.TabIndex = 11;
             this.metroLabelEditAttendance.Text = "Edit Attendance";
-            this.metroLabelEditAttendance.Click += new System.EventHandler(this.metroLabelEditAttendance_Click);
             // 
             // metroLabelDeleteAttendance
             // 
@@ -170,7 +167,6 @@
             this.metroTextBoxName.Name = "metroTextBoxName";
             this.metroTextBoxName.Size = new System.Drawing.Size(304, 23);
             this.metroTextBoxName.TabIndex = 14;
-            this.metroTextBoxName.Click += new System.EventHandler(this.metroTextBoxName_Click);
             // 
             // metroTextBoxIDEvent
             // 
@@ -188,7 +184,6 @@
             this.metroLabelIDEvent.Size = new System.Drawing.Size(64, 20);
             this.metroLabelIDEvent.TabIndex = 15;
             this.metroLabelIDEvent.Text = "ID Event";
-            this.metroLabelIDEvent.Click += new System.EventHandler(this.metroLabelIDEvent_Click);
             // 
             // metroLabelStatus
             // 
@@ -274,7 +269,6 @@
             this.metroRadioButtonEditIzin.TabStop = true;
             this.metroRadioButtonEditIzin.Text = "Izin";
             this.metroRadioButtonEditIzin.UseVisualStyleBackColor = true;
-            this.metroRadioButtonEditIzin.CheckedChanged += new System.EventHandler(this.metroRadioButtonEditIzin_CheckedChanged);
             // 
             // metroRadioButtonEditTelat
             // 
@@ -374,7 +368,6 @@
             this.metroLabel3.Size = new System.Drawing.Size(156, 25);
             this.metroLabel3.TabIndex = 35;
             this.metroLabel3.Text = "Attendance Data";
-            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
             // 
             // metroLabel4
             // 

@@ -75,11 +75,6 @@ namespace AttendanceAppDesktop
             conn = koneksi.conn;
         }
 
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void OperatorWindow_Load(object sender, EventArgs e)
         {
             metroLabelName.Text = $"Name : {name}";
@@ -88,41 +83,6 @@ namespace AttendanceAppDesktop
 
             updateAttendanceTable();
             updateEventsTable();
-        }
-
-        private void metroLabelAddAttendance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTextBoxName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabelIDEvent_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabelEditAttendance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroRadioButtonEditIzin_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void metroButtonAdd_Click(object sender, EventArgs e)
@@ -149,14 +109,12 @@ namespace AttendanceAppDesktop
             string name = metroTextBoxName.Text.Trim();
             string selectedEventId = metroTextBoxIDEvent.Text.Trim();
 
-            // Periksa apakah nama, event, dan status tidak kosong
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(selectedEventId) || string.IsNullOrEmpty(status))
             {
                 MessageBox.Show("Nama, event, dan status harus diisi!");
-                return; // Keluar dari metode jika ada yang kosong
+                return; 
             }
 
-            // Ambil nama event dari database events
             string eventQuery = $"SELECT event FROM events WHERE id = '{selectedEventId}'";
 
             conn.Open();
@@ -164,14 +122,12 @@ namespace AttendanceAppDesktop
             string event_ = cmd.ExecuteScalar()?.ToString();
             conn.Close();
 
-            // Periksa apakah event ditemukan
             if (string.IsNullOrEmpty(event_))
             {
                 MessageBox.Show("Event tidak ditemukan!");
-                return; // Keluar dari metode jika event tidak ditemukan
+                return;
             }
 
-            // Eksekusi kueri SQL
             conn.Open();
             string absen = $"INSERT INTO attendance (name, event, status) VALUES ('{name}', '{event_}', '{status}')";
             cmd = new MySqlCommand(absen, conn);
@@ -206,11 +162,10 @@ namespace AttendanceAppDesktop
 
             string id = metroTextBoxEditIDAttendance.Text.ToString();
 
-            // Periksa apakah nama, event, dan status tidak kosong
             if (string.IsNullOrEmpty(status) || string.IsNullOrEmpty(id))
             {
                 MessageBox.Show("ID Attendance dan status harus diisi!");
-                return; // Keluar dari metode jika ada yang kosong
+                return;
             }
 
             conn.Open();
@@ -230,7 +185,7 @@ namespace AttendanceAppDesktop
             if (string.IsNullOrEmpty(id))
             {
                 MessageBox.Show("ID Attendance harus diisi!");
-                return; // Keluar dari metode jika ada yang kosong
+                return;
             } else
             {
                 conn.Open();

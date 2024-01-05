@@ -98,14 +98,13 @@ namespace AttendanceAppDesktop
             string name = metroTextBoxName.Text.Trim();
             string event_ = metroComboBoxEvent.SelectedItem.ToString();
 
-            // Periksa apakah nama, event, dan status tidak kosong
+            
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(event_) || string.IsNullOrEmpty(status))
             {
                 MessageBox.Show("Nama, event, dan status harus diisi!");
-                return; // Keluar dari metode jika ada yang kosong
+                return;
             }
 
-            // Eksekusi kueri SQL
             conn.Open();
             string absen = $"INSERT INTO attendance (name, event, status) VALUES ('{name}', '{event_}', '{status}')";
             cmd = new MySqlCommand(absen, conn);
@@ -139,11 +138,10 @@ namespace AttendanceAppDesktop
 
             string id = metroTextBoxEditIDAttendance.Text.ToString();
 
-            // Periksa apakah nama, event, dan status tidak kosong
             if (string.IsNullOrEmpty(status) || string.IsNullOrEmpty(id))
             {
                 MessageBox.Show("ID Attendance dan status harus diisi!");
-                return; // Keluar dari metode jika ada yang kosong
+                return;
             }
 
             conn.Open();
@@ -163,7 +161,7 @@ namespace AttendanceAppDesktop
             if (string.IsNullOrEmpty(id))
             {
                 MessageBox.Show("ID Attendance harus diisi!");
-                return; // Keluar dari metode jika ada yang kosong
+                return;
             }
             else
             {

@@ -110,13 +110,10 @@ namespace AttendanceAppDesktop
 
         private string hashPassword(string password)
         {
-            // Gunakan algoritma hash kriptografis, misalnya SHA-256
             using (SHA256 sha256Hash = SHA256.Create())
             {
-                // Konversi password menjadi byte array
                 byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
 
-                // Ubah byte array menjadi string hex
                 StringBuilder builder = new StringBuilder();
                 for (int i = 0; i < bytes.Length; i++)
                 {
@@ -171,11 +168,6 @@ namespace AttendanceAppDesktop
                 }
                 conn.Close();
             }
-        }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void metroButtonEdit_Click(object sender, EventArgs e)

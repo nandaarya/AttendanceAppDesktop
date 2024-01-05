@@ -314,7 +314,6 @@
             this.metroLabel1.Size = new System.Drawing.Size(70, 20);
             this.metroLabel1.TabIndex = 152;
             this.metroLabel1.Text = "Password";
-            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
             // metroCheckBoxEditPassword
             // 
