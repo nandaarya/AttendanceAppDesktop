@@ -25,7 +25,7 @@ Build using:
   - Record their attendance but only once per hour for each event
   - View their attendance (all events) and view all events
  
-###Show Case / User Interface###
+### Show Case / User Interface ###
 - Login window
 
 ![login]()
