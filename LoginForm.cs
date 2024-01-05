@@ -47,16 +47,6 @@ namespace AttendanceAppDesktop
             InitializeComponent();
         }
 
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroButtonLogin_Click(object sender, EventArgs e)
         {
             string mysqlconn = "server=127.0.0.1;user=root;database=attendance_app;password=";
@@ -134,13 +124,10 @@ namespace AttendanceAppDesktop
 
         private string hashPassword(string password)
         {
-            // Gunakan algoritma hash kriptografis, misalnya SHA-256
             using (SHA256 sha256Hash = SHA256.Create())
             {
-                // Konversi password menjadi byte array
                 byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
 
-                // Ubah byte array menjadi string hex
                 StringBuilder builder = new StringBuilder();
                 for (int i = 0; i < bytes.Length; i++)
                 {
@@ -163,7 +150,7 @@ namespace AttendanceAppDesktop
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void LoginForm_Load(object sender, EventArgs e)
         {
 
         }

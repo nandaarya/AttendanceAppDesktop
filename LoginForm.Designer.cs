@@ -48,7 +48,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // metroTextBoxEmail
             // 
@@ -73,7 +72,6 @@
             this.metroLabel1.Size = new System.Drawing.Size(42, 20);
             this.metroLabel1.TabIndex = 3;
             this.metroLabel1.Text = "Email";
-            this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
             // metroLabel2
             // 
