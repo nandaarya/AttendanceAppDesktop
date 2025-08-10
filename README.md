@@ -60,8 +60,8 @@ Build using:
 ![participant](https://github.com/nandaarya/AttendanceAppDesktop/blob/master/assets/Screenshot_Participant_Window.png)
 
 ## Future Development ##
-Possible further feature development (Maybe XD):
+Possible further feature development:
 - Maybe create a better UI
-- Add Schedule Notification (Idk how to do it lol)
+- Add Schedule Notification
 - Add "Add Additional Information" for participant user
 - etc
